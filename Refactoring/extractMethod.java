@@ -13,7 +13,10 @@ public class extractMethod {
         int numberOfStudents = getNumberOfStudents();
         int[] scores = getScores(numberOfStudents);
         int best = getBestScore(scores);
-        showGrades(scores, best);
+        showAGrades(scores, best);
+        showBGrades(scores, best);
+        showCGrades(scores, best);
+        showDGrades(scores, best);
     }
 
     public int getNumberOfStudents() {
@@ -41,18 +44,34 @@ public class extractMethod {
         return best;
     }
 
-    public void showGrades(int[] scores, int best) {
+    public void showAGrades(int[] scores, int best) {
         for (int i = 0; i < scores.length; i++) {
             if (scores[i] >= best - 10) {
                 System.out.println("Student " + i + " score is " + scores[i] + " and grade is A");
-            } else if (scores[i] >= best - 20) {
+            }
+        }
+    }
+
+    public void showBGrades(int[] scores, int best) {
+        for (int i = 0; i < scores.length; i++) {
+            if (scores[i] >= best - 20) {
                 System.out.println("Student " + i + " score is " + scores[i] + " and grade is B");
-            } else if (scores[i] >= best - 30) {
+            }
+        }
+    }
+
+    public void showCGrades(int[] scores, int best) {
+        for (int i = 0; i < scores.length; i++) {
+            if (scores[i] >= best - 30) {
                 System.out.println("Student " + i + " score is " + scores[i] + " and grade is C");
-            } else if (scores[i] >= best - 40) {
+            }
+        }
+    }
+
+    public void showDGrades(int[] scores, int best) {
+        for (int i = 0; i < scores.length; i++) {
+            if (scores[i] >= best - 40) {
                 System.out.println("Student " + i + " score is " + scores[i] + " and grade is D");
-            } else {
-                System.out.println("Student " + i + " score is " + scores[i] + " and grade is F");
             }
         }
     }
