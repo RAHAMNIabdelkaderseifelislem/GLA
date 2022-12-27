@@ -25,3 +25,12 @@ public class calculate {
         System.out.println("The factoriel of " + number + " is " + result);
     }
 }
+
+/* explain all bad symptoms here 
+ * 1. the code is not readable
+ * 2. the code is not maintainable
+ * 3. the code is not testable
+ * 4. the code is not extendable
+ * 5. the code is not reusable
+ * if we need to update the code we need to change the code in many places
+*/
