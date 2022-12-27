@@ -35,4 +35,55 @@ public class AppTest
     {
         assertTrue( true );
     }
+
+    /*
+     * test an app that calculates the factorial of a number
+     * number is 1
+     */
+    public void testFactorialOfOne()
+    {
+        // arrange
+        int number = 1;
+        int expected = 1;
+
+        // act
+        int actual = App.factorial(number);
+
+        // assert
+        assertEquals(expected, actual);
+    }
+
+    /*
+     * test an app that calculates the factorial of a number
+     * number is 2
+     */
+    public void testFactorialOfTwo()
+    {
+        // arrange
+        int number = 2;
+        int expected = 2;
+
+        // act
+        int actual = App.factorial(number);
+
+        // assert
+        assertEquals(expected, actual);
+    }
+
+    /*
+     * test an app that calculates the factorial of a number
+     * number is 3
+     */
+    public void testFactorialOfThree()
+    {
+        // arrange
+        int number = 3;
+        int expected = 6;
+
+        // act
+        int actual = App.factorial(number);
+
+        // assert
+        assertEquals(expected, actual);
+    }
 }
